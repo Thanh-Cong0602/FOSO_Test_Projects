@@ -118,7 +118,7 @@ const PlanningChart = ({ isEmpty }: Readonly<PlanningChartProps>) => {
       ];
 
   return (
-    <div id="planning-chart" className="relative w-full">
+    <div id="planning-chart" className="relative w-full min-h-100">
       <div className="absolute top-0 right-0">
         <PlanningChartLegend />
       </div>
