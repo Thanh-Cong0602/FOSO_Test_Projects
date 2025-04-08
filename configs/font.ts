@@ -1,16 +1,4 @@
-import { Geist, Geist_Mono, Lexend_Deca } from "next/font/google";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-  display: "swap",
-});
+import { Lexend_Deca } from "next/font/google";
 
 const lexendDeca = Lexend_Deca({
   variable: "--font-lexend-deca",
@@ -18,8 +6,4 @@ const lexendDeca = Lexend_Deca({
   display: "swap",
 });
 
-export const fonts = {
-  geistSans,
-  geistMono,
-  lexendDeca,
-};
+export const fonts = { lexendDeca };
