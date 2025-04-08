@@ -12,7 +12,7 @@ const WidgetSumary = ({ selectedMonth }: Readonly<WidgetSumaryProps>) => {
   const { data, isLoading } = useWidgetSumary();
 
   return (
-    <div className="flex items-center justify-between gap-6 min-h-[116px]">
+    <div className="flex items-center justify-between gap-6 min-h-29">
       {isLoading && (
         <>
           {[...Array(5)].map((_, index) => (

@@ -17,10 +17,10 @@ export function RawMaterialTable({ isEmpty }: Readonly<RawMaterialTableProps>) {
   return (
     <div className="w-full rounded-md">
       <Table>
-        <TableHeader className="bg-[#F3F4F6] border border-white-border h-12">
+        <TableHeader className="bg-neutral-300 border border-white-border h-12">
           <TableRow className="border-b-white-border">
             {["STT", "Nguyên vật liệu", "Đơn vị tính", "Số lượng"].map((item, index) => (
-              <TableHead key={index} className="text-[#52575E] leading-4 text-xs font-semibold">
+              <TableHead key={index} className="text-gray-500 leading-4 text-xs font-semibold">
                 {item}
               </TableHead>
             ))}

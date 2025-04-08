@@ -15,7 +15,7 @@ const ProductionSituations = () => {
 
   return (
     <div className="w-1/3 shadow-card rounded-3xl bg-background pb-6 px-6">
-      <div className=" grid items-center justify-between gap-10">
+      <div className="grid items-center justify-between gap-10">
         <CardHeader
           title="Tình hình sản xuất"
           TimeDropdown={

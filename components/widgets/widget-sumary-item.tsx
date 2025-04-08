@@ -19,10 +19,10 @@ const WidgetSumaryItem = ({
   isEmpty,
 }: Readonly<WidgetSumaryItemProps>) => {
   return (
-    <div className="w-full h-[116px] max-w-[343px] rounded-3xl p-6 shadow-card">
+    <div className="w-full h-29 max-w-[343px] rounded-3xl p-6 shadow-card">
       <div className=" flex justify-between items-start">
         <div>
-          <p className="text-light-blue font-bold text-[32px] leading-12 tracking-normal">
+          <p className="text-light-blue font-bold text-8 leading-12 tracking-normal">
             {isEmpty ? 0 : productTotal}
           </p>
           <p className=" font-normal text-sm leading-5 tracking-normal text-black-500">

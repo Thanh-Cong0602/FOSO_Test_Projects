@@ -15,7 +15,7 @@ const ProgressItem = ({ title, totalProfit, value, isEmpty }: Readonly<ProgressI
         {isEmpty ? (
           "-"
         ) : (
-          <p className="font-semibold leading-[22px]">
+          <p className="font-semibold leading-5.5">
             {totalProfit} cái <span className="text-text-secondary font-normal">({value}%)</span>
           </p>
         )}
