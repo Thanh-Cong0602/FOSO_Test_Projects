@@ -114,7 +114,7 @@ const HighlightCustomerChart = ({ isEmpty }: Readonly<HighlightCustomerChartProp
     <div id="hightlight-chart" className="relative w-full min-h-100">
       <div className="absolute left-[90px] top-5 apexcharts-title">Khách hàng</div>
       <BarChart options={options} series={series} height={400} />
-      <div className="absolute left-[100px] bottom-[28px] apexcharts-title">Sản lượng</div>
+      <div className="absolute left-[100px] bottom-7 apexcharts-title">Sản lượng</div>
     </div>
   );
 };

@@ -29,14 +29,14 @@ const ProductionSituationLegend = ({
     <div className="flex items-center gap-2">
       {isLoading &&
         [...Array(3)].map((_, index) => (
-          <div key={index} className="border border-[#DDDDE2] p-2 grid gap-1 rounded-lg min-w-[130px]">
+          <div key={index} className="border border-white-50 p-2 grid gap-1 rounded-lg min-w-[130px]">
             <Skeleton className="h-8 w-10 rounded-xl" />
             <Skeleton className="h-5 w-full rounded-xl" />
           </div>
         ))}
 
       {data?.map((item, index) => (
-        <div key={index} className="border border-[#DDDDE2] p-2 grid gap-1 rounded-lg min-w-[130px]">
+        <div key={index} className="border border-white-50 p-2 grid gap-1 rounded-lg min-w-[130px]">
           <p
             className="leading-8 text-2xl font-semibold tracking-normal"
             style={{ color: getColorByStatus(item.status) }}

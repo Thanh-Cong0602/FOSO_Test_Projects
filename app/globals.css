@@ -5,6 +5,7 @@
   --background: #ffffff;
   --foreground: #171717;
   --white-border: #F3F3F4;
+  --white-50: #DDDDE2;
   --gray-100: #d0d5dd;
   --gray-200: #919eab;
   --gray-300: #9295a4;
@@ -29,6 +30,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-white-border: var(--white-border);
+  --color-white-50: var(--white-50);
   --color-dark-primary: var(--dark-primary);
   --color-text-primary: var(--text-primary);
   --color-text-secondary: var(--text-secondary);
@@ -43,12 +45,19 @@
   --color-gray-700: var(--gray-700);
   --color-neutral-100: var(--neutral-100);
   --color-neutral-300: var(--neutral-300);
-  --spacing-18: 72px;
-  --spacing-100: 400px;
   --color-black-500: var(--black-500);
+
+  --spacing-18: 72px;
+  --spacing-29: 116px;
+  --spacing-100: 400px;
+
   --radius-5: 20px;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --text-8: 32px;
+  --text-2.5: 10px;
+  --leading-5.5: 22px;
+  --leading-full: 100%;
   --shadow-card: 0px 12px 24px -4px rgba(145, 158, 171, 0.12), 0px 0px 2px 0px rgba(145, 158, 171, 0.2);
 }
 
