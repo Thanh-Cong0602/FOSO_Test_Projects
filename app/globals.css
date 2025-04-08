@@ -1,25 +1,96 @@
 @import "tailwindcss";
 
 :root {
+  --font-lexend-deca: "Lexend Deca  sans-serif";
   --background: #ffffff;
   --foreground: #171717;
+  --white-border: #F3F3F4;
+  --gray-100: #d0d5dd;
+  --gray-200: #919eab;
+  --gray-300: #9295a4;
+  --gray-400: #667085;
+  --gray-500: #52575E;
+  --gray-700: #3a3e4c;
+  --black-500: #141522;
+  --neutral-100: #FFFFFF;
+  --neutral-300: #F3F4F6;
+  --dark-primary: #17181a;
+  --navbar: #003da0;
+  --light-blue: #0375f3;
+  --font-barlow: "Barlow sans-serif";
+  --light-green: #1FC583;
+  --text-primary: #1C252E;
+  --text-secondary: #637381;
 }
 
 @theme inline {
+  --font-lexend-deca: var(--font-lexend-deca)
+  --font-barlow: var(--font-barlow);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-white-border: var(--white-border);
+  --color-dark-primary: var(--dark-primary);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-navbar: var(--navbar);
+  --color-light-blue: var(--light-blue);
+  --color-light-green: var(--light-green);
+  --color-gray-100: var(--gray-100);
+  --color-gray-200: var(--gray-200);
+  --color-gray-300: var(--gray-300);
+  --color-gray-400: var(--gray-400);
+  --color-gray-500: var(--gray-500);
+  --color-gray-700: var(--gray-700);
+  --color-neutral-100: var(--neutral-100);
+  --color-neutral-300: var(--neutral-300);
+  --spacing-18: 72px;
+  --spacing-100: 400px;
+  --color-black-500: var(--black-500);
+  --radius-5: 20px;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --shadow-card: 0px 12px 24px -4px rgba(145, 158, 171, 0.12), 0px 0px 2px 0px rgba(145, 158, 171, 0.2);
 }
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
+  font-family: var(--font-lexend-deca);
   margin: auto;
+}
+
+.wrapper-content {
+  max-width: calc(100vw - 96px);
+  width: calc(100vw - 96px);
+  margin: auto;
+}
+
+#planning-chart .apexcharts-tooltip {
+  @apply bg-dark-primary px-4 py-2 rounded-md text-white border-0;
+}
+
+#hightlight-chart .yaxis-title {
+  @apply whitespace-pre-line break-words
+}
+
+.apexcharts-title {
+  font-family: var(--font-lexend-deca) !important;
+  @apply text-gray-400 text-xs font-normal leading-4 tracking-normal;
+}
+
+.apexcharts-label {
+  font-family: var(--font-lexend-deca) !important;
+  @apply text-gray-300 text-xs font-normal tracking-normal leading-4;
+}
+
+.table-cell-item {
+  @apply text-black-500 font-semibold text-sm tracking-normal;
+}
+
+.card-header {
+  @apply pl-6 pr-4
 }
